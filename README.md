@@ -12,14 +12,14 @@ your specific Software Engineering program, spanning from Year 1 through Year
 ### Instruction Setup
 ### Step 1: Set Up Your Development Environment
 1. Install prerequisites:
-PHP (8.0 or higher)
-Composer
-MySQL (or other RDBMS)
-Git
+PHP (8.0 or higher).
+Composer.
+MySQL (or other RDBMS).
+Git.
 2. Create a new Laravel project:
 ### Step 2: Database Setup
 1. Configure your .env file with database credentials
-DB_CONNECTION=mysql
+ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=cs421_assignment
