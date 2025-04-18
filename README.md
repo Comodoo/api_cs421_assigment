@@ -80,17 +80,17 @@ Step 5: Test Your API Locally
 
 - ## Bash Scripting
 - ### Backup Scheme
-1. Full Backup
+### 1. Full Backup
 A full backup makes a complete copy of all files and data in the system, project, or database at the time of backup.
 - Execution: Every time it runs, it copies everything (even unchanged files). Typically stored as a single backup file or archive.
 - Advantages:Easy to restore, you only need one backup file to recover everything and Ideal when you want a known complete state of the system.
 - Disadvantages:Time-consuming copying everything takes longer, Storage-heavy each backup consumes a lot of space and Not efficient for frequent backups.
-2. Incremental Backup
+### 2. Incremental Backup
 An incremental backup only copies files that have changed since the last backup (whether full or incremental).
 - Execution: After a full backup, only changes are saved in each subsequent run. Builds a chain of backups, each depending on the last.
 - Advantages: Fast and lightweight very quick to perform, Saves storage only small changes are backed up and Ideal for daily/hourly backups.
 - Disadvantages: Slower recovery you must restore the last full backup plus all incrementals and If one incremental backup is corrupted, restore can fail.
-3. Differential Backup
+### 3. Differential Backup
 A differential backup copies all changes made since the last full backup (but not each small change like incremental).
 -Execution: After a full backup, each new differential contains everything changed since the last full. The size grows over time until the next full backup is made.
 - Advantages: Faster restore than incremental you only need the last full + last differential and Still saves space compared to doing full backups daily.
